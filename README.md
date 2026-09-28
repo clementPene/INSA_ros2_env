@@ -32,12 +32,16 @@ ros2 run turtlesim turtlesim_node
 
 ## Espace de travail personnel
 
-Ce dépôt ne contient que l'environnement. Créez votre propre espace de
-travail ROS 2 ailleurs, par exemple :
+Ce dépôt sert aussi de workspace ROS 2 : les paquets que vous créez
+avec `ros2 pkg create` vont dans `src/`, à la racine du dépôt.
 
 ```bash
-mkdir src/
+mkdir src
+cd src
+ros2 pkg create --build-type ament_python --license Apache-2.0 mon_paquet
+cd ..
+colcon build --packages-select mon_paquet
 ```
 
-Les paquets que vous créerez avec `ros2 pkg create` doivent aller dans
-`/src`.
+`build/`, `install/` et `log/` (créés par `colcon build`) sont déjà
+ignorés par `.gitignore` : pas de risque de les committer par erreur.

@@ -36,8 +36,8 @@ Ce dépôt ne contient que l'environnement. Créez votre propre espace de
 travail ROS 2 ailleurs, par exemple :
 
 ```bash
-mkdir -p ~/dev_ws/src
+mkdir src/
 ```
 
-Les paquets que vous créerez avec `ros2 pkg create` iront dans
-`~/dev_ws/src`, pas dans ce dépôt.
+Les paquets que vous créerez avec `ros2 pkg create` doivent aller dans
+`/src`.

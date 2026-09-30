@@ -8,10 +8,10 @@ Environnement Nix pour les TD ROS 2 Jazzy. Fournit `ros2`, `colcon`,
 ```bash
 git clone https://github.com/clementPene/INSA_ros2_env
 cd INSA_ros2_env
-nix develop
+direnv allow
 ```
 
-Le premier `nix develop` télécharge l'environnement (compter plusieurs
+Le premier `direnv allow` télécharge l'environnement (compter plusieurs
 minutes selon le réseau). Une fois dedans :
 
 ```bash
@@ -27,8 +27,7 @@ ros2 run turtlesim turtlesim_node
   ceux des autres postes de la salle.
 - Avec [direnv](https://direnv.net/) installé et activé, elles sont
   exportées automatiquement en entrant dans le dossier
-  (`direnv allow`). Sinon, elles sont déjà héritées par `nix develop`
-  si le shell qui l'a lancé les a chargées (ex. via `source .envrc`).
+  (`direnv allow`).
 
 ## Espace de travail personnel
 

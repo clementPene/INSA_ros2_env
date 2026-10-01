@@ -17,7 +17,10 @@
           "turtlesim"
           "demo-nodes-py"
           "rqt-graph"
-          "rqt-console"
+	  "rqt-console"
+	  "rqt-service-caller"
+	  "rqt-publisher"
+	  "rqt-msg"
           "ros2bag"
           "ros2launch"
         ];

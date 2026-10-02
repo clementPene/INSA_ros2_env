@@ -29,6 +29,12 @@ ros2 run turtlesim turtlesim_node
   exportées automatiquement en entrant dans le dossier
   (`direnv allow`).
 
+## Code source de turtlesim
+
+```bash
+git clone -b jazzy https://github.com/ros/ros_tutorials.git src/ros_tutorials
+```
+
 ## Espace de travail personnel
 
 Ce dépôt sert aussi de workspace ROS 2 : les paquets que vous créez
